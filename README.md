@@ -1,12 +1,63 @@
-# React + Vite
+# 🎮 GTA VI Animated Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 A visually stunning GTA VI-style landing page packed with smooth animations, parallax effects, and cinematic vibes — built using **React** & **GSAP**. This is a **frontend-only project**, designed for desktop screens.
 
-Currently, two official plugins are available:
+## 🌟 Features
+- 🎬 High-quality animations with **GSAP**
+- 🖼️ Smooth **parallax scrolling**
+- 🖥️ PC-only layout for immersive experience
+- ⚛️ Built with **React.js**
+- 💡 Perfect as a creative design showcase
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
+- React.js  
+- GSAP (GreenSock Animation Platform)  
+- CSS Modules / Tailwind CSS
 
-## Expanding the ESLint configuration
+## 📸 Live Preview
+👉 [Check out the live site here](https://gta-vi-sable.vercel.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧪 Run Locally
+📥 Clone the repository:
+```bash
+git clone https://github.com/0hcoder/GTA-VI.git
+cd gta-vi-landing-page
+```
+
+📦 Install dependencies:
+```bash
+npm install
+```
+
+▶️ Start the development server:
+```bash
+npm run
+```
+
+Then open `http://localhost:5173` in your browser.  
+⚠️ **Note**: This project is optimized for desktop view only!
+
+## 💾 Download Source Code
+Click the green **Code** button on this repository → then click **Download ZIP**  
+Or clone using:
+```bash
+git clone https://github.com/0hcoder/GTA-VI
+```
+
+## 📂 Folder Structure
+```
+/src
+├── components/      // Reusable UI elements
+├── assets/          // Images, videos, etc.
+├── styles/          // Global & component-specific styles
+└── App.jsx          // Main App file
+```
+
+## Usage
+Feel free to use, modify, and distribute this project for personal, educational, or non-commercial purposes.  
+While no formal license is provided, I give my permission for you to explore and build upon this work.  
+Please consider giving credit if you use this project.
+
+
+## 👤 Author
+Made with 💜 by [Ankit Rawat](https://github.com/0hcoder)
