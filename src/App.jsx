@@ -79,8 +79,8 @@ const App = () => {
         </svg>
       </div>
       {isVisible && (
-        <div className="main w-full Overflow-hidden">
-          <div className="landing w-full h-screen no-scrollbar bg-black">
+        <div className="main w-full overflow-hidden">
+          <div className="landing w-full h-screen bg-black">
             <div className="navbar absolute top-0 left-0 z-[10] w-full py-10 px-10  text-white">
               <div className="logo flex gap-6 items-center">
                 <div className="lines flex flex-col gap-[6px]">
@@ -91,7 +91,7 @@ const App = () => {
                 <h3 className="text-3xl -mt-[19px] leading-none">RockStar</h3>
               </div>
             </div>
-            <div className="imagesdiv relative w-full h-screen overflow-y-hidden">
+            <div className="imagesdiv relative w-full h-screen overflow-hidden">
               <img
                 className="sky w-full h-full bg-cover absolute scale-[1.2] top-0 left-0"
                 src="./sky.png"
@@ -125,8 +125,36 @@ const App = () => {
               />
             </div>
           </div>
-          <div className="w-full h-screen bg-amber-500">
-            <img className="w-full h-full bg-cover" src="https://images.alphacoders.com/135/thumb-1920-1355218.jpg" alt="" />
+          <div className="w-full h-screen px-10 bg-black flex items-center justify-center">
+            <div className="cntnr w-full h-[80%] text-white flex justify-center">
+              <div className="limg w-1/2 relative h-full">
+                <img
+                  className="absolute top-1/2 left-1/2 -translate-x-[65%] -translate-y-[45%] scale-[0.9]"
+                  src="./imag.png"
+                  alt=""
+                />
+              </div>
+              <div className="rg w-[40%] py-14">
+                <h1 className="text-7xl">Still Running,</h1>
+                <h1 className="text-7xl">Not Hunting</h1>
+                <p className="text-[0.9rem] mt-10 font-[Helvetica_Now_Display] ">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Beatae pariatur voluptates officia similique quasi quis, non
+                  modi enim perspiciatis ipsa laudantium vero
+                </p>
+                  <p className="text-[0.9rem] mt-4 font-[Helvetica_Now_Display] ">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Beatae pariatur voluptates officia similique quasi.
+                </p>
+                 <p className="text-[0.9rem] mt-7 font-[Helvetica_Now_Display] ">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Beatae pariatur voluptates officia similique quasi quis, non
+                  modi enim perspiciatis ipsa laudantium vero ab, ad hic
+                  placeat, iusto atque nulla labore ullam blanditiis.
+                </p>
+                <button className="py-5 px-8 bg-yellow-500 text-black mt-8 text-2xl rounded-3xl">Downoald Now!</button>
+              </div>
+            </div>
           </div>
         </div>
       )}

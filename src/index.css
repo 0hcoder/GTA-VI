@@ -1,20 +1,22 @@
 @import "tailwindcss";
-@layer utilities {
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-  .no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-}
-
 @font-face {
-    font-family: "pricedown";
-    src: url(./pricedown.otf);
+  font-family: "pricedown";
+  src: url(./pricedown.otf);
 }
-html,body {
+html,
+body {
   height: 100%;
   width: 100%;
   font-family: "pricedown";
+}
+html,
+body {
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
 }
