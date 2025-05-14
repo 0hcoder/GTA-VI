@@ -29,6 +29,45 @@ const App = () => {
     });
   });
   useGSAP(() => {
+    if (!isVisible) return;
+    gsap.to(".main", {
+      rotate: 0,
+      scale: 1,
+      duration: 2,  
+      delay: -1,
+      ease: "Expo.easeInOut",
+    })
+     gsap.to(".sky", {
+      rotate: 0,
+      scale: 1.2,
+      duration: 2,  
+      delay: -.8,
+      ease: "Expo.easeInOut",
+    })
+     gsap.to(".bg", {
+      rotate: 0,
+      scale: 1.2,
+      duration: 2,  
+      delay: -.8,
+      ease: "Expo.easeInOut",
+    })
+
+      gsap.to(".girl", {
+      rotate: 0,
+      x: "-50%",
+      bottom: "-70%",
+      scale: 0.8,
+      duration: 2,  
+      delay: -.8,
+      ease: "Expo.easeInOut",
+    })
+     gsap.to(".text", {
+      rotate: 0,
+      scale: 1,
+      duration: 2,  
+      delay: -.8,
+      ease: "Expo.easeInOut",
+    })
     const main = document.querySelector(".main");
     main?.addEventListener("mousemove", (e) => {
       const xMove = (e.clientX / window.innerWidth - 0.5) * 40;
@@ -46,7 +85,7 @@ const App = () => {
   }, [isVisible]);
   return (
     <>
-      <div className="svg flex ite justify-center fixed top-0 left-0  z-[10] w-full h-screen overflow-hidden bg-[#000] ">
+      <div className="svg flex items-center justify-center fixed top-0 left-0  z-[10] w-full h-screen overflow-hidden bg-[#000] ">
         <svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
           <defs>
             <mask id="viMask">
@@ -79,8 +118,8 @@ const App = () => {
         </svg>
       </div>
       {isVisible && (
-        <div className="main w-full overflow-hidden">
-          <div className="landing w-full h-screen bg-black">
+        <div className="main w-full overflow-hidden  scale-[1.7] rotate-[-10deg]">
+          <div className="landing w-full relative h-screen bg-black">
             <div className="navbar absolute top-0 left-0 z-[10] w-full py-10 px-10  text-white">
               <div className="logo flex gap-6 items-center">
                 <div className="lines flex flex-col gap-[6px]">
@@ -93,22 +132,22 @@ const App = () => {
             </div>
             <div className="imagesdiv relative w-full h-screen overflow-hidden">
               <img
-                className="sky w-full h-full bg-cover absolute scale-[1.2] top-0 left-0"
+                className="sky w-full h-full bg-cover absolute scale-[1.5] rotate-[-20deg] top-0 left-0"
                 src="./sky.png"
                 alt=""
               />
               <img
-                className="w-full bg scale-[1.2] h-full bg-cover absolute top-0 left-0"
+                className="w-full bg scale-[1.8] rotate-[-3deg] h-full bg-cover absolute top-0 left-0"
                 src="./bg.png"
                 alt=""
               />
-              <div className="text absolute top-1.5 left-1/2 -translate-x-1/2 text-white flex flex-col gap-1">
+              <div className="text absolute top-1.5 left-1/2 -translate-x-1/2 text-white flex flex-col gap-1 sacle-[1.5] rotate-[-10deg]">
                 <h1 className="text-[6.2rem] leading-none  -ml-16">grand</h1>
                 <h1 className="text-[6.2rem] leading-none  ml-14">theft</h1>
                 <h1 className="text-[6.2rem] leading-none  -ml-16">auto</h1>
               </div>
               <img
-                className="absolute -bottom-[70%] left-1/2 -translate-x-1/2 scale-[0.8]"
+                className="absolute girl -bottom-[220%] left-1/2 -translate-x-1/2 scale-[2.5] rotate-[-20deg]"
                 src="./girlbg.png"
                 alt=""
               />
